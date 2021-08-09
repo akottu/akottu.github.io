@@ -1,0 +1,90 @@
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Rajdhani', sans-serif;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Rajdhani', sans-serif; */
+}
+
+.navbar {
+    background: black;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+/* body { */
+    /* background-image: linear-gradient(to bottom right, whitesmoke, #DEFDE0); */
+    /* background: url(../img/background.png) no-repeat center center fixed;  */
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
+    /* height: 100%; */
+/* } */
+
+h1, h5 {
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* .nav-item:hover {
+    background: whitesmoke;
+} */
+
+.nav-item:hover h5 {
+    color: black;
+    background: whitesmoke;
+}
+
+.navbar-toggler {
+    background: whitesmoke;
+}
+
+nav {
+    margin-bottom: 2%;
+}
+
+#profile-pic {
+    max-width: 100%;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.icon {
+    max-width: 36px;
+    float: right;
+    margin: 0px 0px 0px 25px;
+}
+
+#profile-bio {
+    font-size: 24px;
+}
+
+.bio-link {
+    /* font-weight: bold; */
+    color: black
+}
+
+.bio-link:hover{
+    font-weight: bold;
+    color: black
+}

@@ -16,6 +16,8 @@ green = "#90EE90";
 blue = "#ADD8E6";
 purple = "#CBC3E3";
 
+red = "#dea5a4";
+
 // var red = "#ff6961";
 // var orange = "#ffb347";
 // var yellow = "#fdfd96";

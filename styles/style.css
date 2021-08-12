@@ -1,9 +1,13 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     /* font-family: 'Dosis', sans-serif; */
     font-family: 'Rajdhani', sans-serif;
 }
 
-p {
+h2, h6 {
+    font-weight: bold;
+}
+
+p, h6 {
     font-family: 'Dosis', sans-serif;
     /* font-family: 'Rajdhani', sans-serif; */
 }
@@ -81,10 +85,78 @@ nav {
 
 .bio-link {
     /* font-weight: bold; */
-    color: black
+    color: black;
 }
 
 .bio-link:hover{
     font-weight: bold;
-    color: black
+    color: black;
+}
+
+.waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    30% { transform: rotate(-8.0deg) }
+    40% { transform: rotate(14.0deg) }
+    50% { transform: rotate(-4.0deg) }
+    60% { transform: rotate(10.0deg) }
+    70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+   100% { transform: rotate( 0.0deg) }
+}
+
+.change-background-btn, .download-resume {
+    border: black solid 1px;
+    border-radius: 5px;
+    background: black;
+    color: whitesmoke;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+}
+
+.download-resume {
+    margin: 0 auto;
+    display: block;
+}
+
+.change-background-btn:hover, .download-resume:hover {
+    border: black solid 1px;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.resume-section-header {
+    margin-top: 0.5em
+}
+
+.resume-section {
+    border: 1px black solid;
+    border-radius: 25px;
+    margin: 1em 0em;
+}
+
+.resume-organization-name, .resume-section-header {
+    text-align: right;
+}
+
+.resume-organization-role,  .resume-organization-time {
+    text-align: left;
+}
+
+.resume-item-header {
+    margin-bottom: 0.5em;
 }

@@ -83,13 +83,13 @@ nav {
     font-size: 24px;
 }
 
-.bio-link {
+.bio-link, .resume-link {
     /* font-weight: bold; */
     color: black;
 }
 
-.bio-link:hover{
-    font-weight: bold;
+.bio-link:hover, .resume-link:hover {
+    font-weight: bolder;
     color: black;
 }
 

@@ -160,3 +160,7 @@ nav {
 .resume-item-header {
     margin-bottom: 0.5em;
 }
+
+.star {
+    max-height: 16px;
+}

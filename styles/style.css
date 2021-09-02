@@ -164,3 +164,8 @@ nav {
 .star {
     max-height: 16px;
 }
+
+.resume-skill-category, .resume-skill-name {
+    font-weight: bold;
+    text-align: right;
+}

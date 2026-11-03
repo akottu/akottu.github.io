@@ -15,12 +15,13 @@ export const site = {
   },
 };
 
-export const sections: { id: string; label: string; accent: Accent }[] = [
+export const sections: { id: string; label: string; shortLabel?: string; accent: Accent }[] = [
   { id: "about", label: "About", accent: "violet" },
   { id: "experience", label: "Experience", accent: "teal" },
   { id: "projects", label: "Projects", accent: "amber" },
   { id: "writing", label: "Writing", accent: "rose" },
   { id: "education", label: "Education", accent: "sky" },
+  { id: "outside", label: "Outside work", shortLabel: "Outside", accent: "lime" },
 ];
 
 // Real numbers from my work, shown in the scrolling strip at the top.
@@ -176,3 +177,29 @@ export const certifications = [
   "Microsoft Azure AI Fundamentals (AI-900)",
   "Machine Learning Specialization, Stanford & DeepLearning.AI",
 ];
+
+export const outside = {
+  items: [
+    {
+      name: "Zoltaba",
+      role: "Founder",
+      text: "The umbrella brand for my friend group's games and leagues: Fantasyland for fantasy sports, Pool Party for pools, and Bored Gang for board games. Chathouse is its next game.",
+    },
+    {
+      name: "The Break Podcast",
+      role: "Founder and co-host",
+      text: "A podcast about what a passion is and what it takes to pursue one. I grew it to 2,000 Instagram followers through campus press and social media, and it joined the Thesis Podcast Network as a founding member.",
+    },
+    {
+      name: "Teaching",
+      role: "The Coding School · CS Sidekicks",
+      text: "Taught Python and web development one-on-one, wrote a web development curriculum for students aged 13 to 21, and ran small-group computer science sessions for Durham middle schoolers.",
+    },
+    {
+      name: "Hackathons",
+      role: "Liberty Mutual · MetLife",
+      text: "Placed 2nd and won the fan vote with an app teaching insurance basics to K-12 students and new hires, and later built a MetLife hackathon project generating claims test cases with the company's MetIQ AI.",
+    },
+  ],
+  interests: ["Basketball", "Chess", "Running", "Cooking", "Painting", "Traveling"],
+};

@@ -183,7 +183,7 @@ export const outside = {
     {
       name: "Zoltaba",
       role: "Founder",
-      text: "The umbrella brand for my friend group's games and leagues: Fantasyland for fantasy sports, Pool Party for pools, and Bored Gang for board games. Chathouse is its next game.",
+      text: "The umbrella brand for my friend group's games, leagues, and content: Fantasyland for fantasy sports, Pool Party for pools, and Bored Gang for board games, plus podcasts and YouTube videos. All proceeds go to charity, and we've donated thousands of dollars so far. Next up is Chathouse, the first game in the newly founded Reality Realm, for all things reality TV.",
     },
     {
       name: "The Break Podcast",

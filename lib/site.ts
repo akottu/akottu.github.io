@@ -198,7 +198,7 @@ export const outside = {
     {
       name: "Hackathons",
       role: "Liberty Mutual · Pendo · MetLife",
-      text: "Placed 2nd and won the fan vote at Liberty Mutual with an app teaching insurance basics to K-12 students and new hires. At Pendo, made manual tagging 16% more efficient by generating adaptive names from context. At MetLife, generated claims test cases with the company's MetIQ AI.",
+      text: "Placed 2nd and won the fan vote at Liberty Mutual with an app teaching insurance basics to K-12 students and new hires. At Pendo, made manual tagging 18% more efficient by generating adaptive names from context. At MetLife, generated claims test cases with the company's MetIQ AI.",
     },
   ],
   interests: ["Basketball", "Chess", "Curating a library", "Cooking", "Painting", "Traveling", "Fantasy sports", "Collecting Lakers jerseys"],

@@ -67,7 +67,7 @@ export const accents: Record<
     ring: "ring-sky-500/30",
     chip: "border-sky-500/25 bg-sky-500/[0.07] text-sky-700 dark:text-sky-300",
   },
-  // The green between amber and teal, used for Outside work.
+  // The green between amber and teal, used for Interests.
   lime: {
     text: "text-lime-700 dark:text-lime-400",
     dot: "bg-lime-500",

@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section id="outside" index={indexOf("outside")} label="Outside work" title="Teaching, a podcast, and a lot of games." accent="lime">
+        <Section id="outside" index={indexOf("outside")} label="Interests" title="Teaching, a podcast, and a lot of games." accent="lime">
           <div className="grid gap-6 md:grid-cols-2">
             {outside.items.map((item) => (
               <div
@@ -188,7 +188,7 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-6 rounded-2xl border border-lime-500/25 bg-lime-500/[0.05] p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Interests</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Hobbies</p>
             <ul className="mt-4 flex flex-wrap gap-2">
               {outside.interests.map((i) => (
                 <li key={i} className={`rounded-full border px-3 py-1 text-sm ${accents.lime.chip}`}>

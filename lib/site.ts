@@ -201,5 +201,5 @@ export const outside = {
       text: "Placed 2nd and won the fan vote at Liberty Mutual with an app teaching insurance basics to K-12 students and new hires. At Pendo, made manual tagging 16% more efficient by generating adaptive names from context. At MetLife, generated claims test cases with the company's MetIQ AI.",
     },
   ],
-  interests: ["Basketball", "Chess", "Running", "Cooking", "Painting", "Traveling"],
+  interests: ["Basketball", "Chess", "Reading", "Cooking", "Painting", "Traveling"],
 };

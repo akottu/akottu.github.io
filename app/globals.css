@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply overflow-x-clip bg-stone-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
+}
+
+::selection {
+  @apply bg-violet-500/25;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Long-form styles for blog posts. */
+.prose-post {
+  @apply text-[17px] leading-8 text-zinc-700 dark:text-zinc-300;
+}
+.prose-post > * + * {
+  @apply mt-5;
+}
+.prose-post h2 {
+  @apply mt-12 text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50;
+}
+.prose-post h3 {
+  @apply mt-8 text-xl font-semibold text-zinc-900 dark:text-zinc-50;
+}
+.prose-post a {
+  @apply font-medium text-rose-600 underline decoration-rose-500/30 underline-offset-4 hover:decoration-rose-500 dark:text-rose-400;
+}
+.prose-post ul {
+  @apply list-disc space-y-2 pl-6 marker:text-rose-500;
+}
+.prose-post ol {
+  @apply list-decimal space-y-2 pl-6 marker:text-rose-500;
+}
+.prose-post code {
+  @apply rounded-md bg-zinc-200/70 px-1.5 py-0.5 font-mono text-[0.85em] text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200;
+}
+.prose-post pre {
+  @apply overflow-x-auto rounded-xl border border-zinc-200 bg-zinc-100 p-4 text-sm leading-6 dark:border-zinc-800 dark:bg-zinc-900;
+}
+.prose-post pre code {
+  @apply bg-transparent p-0;
+}
+.prose-post blockquote {
+  @apply border-l-2 border-rose-500/50 pl-4 italic text-zinc-600 dark:text-zinc-400;
+}
+.prose-post strong {
+  @apply font-semibold text-zinc-900 dark:text-zinc-100;
+}

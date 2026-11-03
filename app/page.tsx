@@ -21,7 +21,7 @@ export default function Home() {
       <main className="mx-auto max-w-5xl px-5 sm:px-8">
         <Hero />
 
-        <Section id="about" index={indexOf("about")} label="About" title="Backend engineer who cares how things hold up over time." accent="violet">
+        <Section id="about" index={indexOf("about")} label="About" title="An engineer who likes owning the whole problem." accent="violet">
           <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
             <div className="space-y-5 text-[17px] leading-8 text-zinc-700 dark:text-zinc-300">
               {about.paragraphs.map((p) => (
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section id="experience" index={indexOf("experience")} label="Experience" title="Five years, four companies, one through line: reliable systems." accent="teal">
+        <Section id="experience" index={indexOf("experience")} label="Experience" title="Five years, four companies, every layer of the stack." accent="teal">
           <ol className="relative space-y-6 border-l border-teal-500/30 pl-6 sm:pl-8">
             {experience.map((job, i) => (
               <li key={job.company} className="relative">

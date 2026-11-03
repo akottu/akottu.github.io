@@ -7,7 +7,7 @@ export const site = {
   name: "Anish Kottu",
   role: "Senior Software Engineer",
   tagline:
-    "I build the backend systems that keep products reliable at scale. Right now that's content infrastructure at IXL Learning, used by millions of students. Lately I'm putting LLMs to work in real products.",
+    "I build software end to end, from Java services and data pipelines to React interfaces, and lately I'm focused on putting AI to work in real products. Right now that's at IXL Learning, on the content platform used by millions of students.",
   email: "akottu@gmail.com",
   links: {
     github: "https://github.com/akottu",
@@ -43,9 +43,9 @@ export const stats: { value: string; label: string; where: string; accent: Accen
 
 export const about = {
   paragraphs: [
-    "I've spent about five years building software across insurance, product analytics, and education. Most of my work is backend Java: services, data pipelines, migrations, and the unglamorous fixes that make a system trustworthy. I'm comfortable on the frontend in React when the work calls for it.",
+    "I've spent about five years building software across insurance, product analytics, and education, on every layer of the stack: Java and Go services, data pipelines, React and Angular interfaces, build pipelines, and the migrations that keep a platform current. I go where the problem is.",
     "The problems I like most are the ones where correctness matters over time: making sure a quiz still works years after the content under it changed, getting a 140-file framework migration out the door without breaking anything, or tracking down a production memory leak. I also like the people side of engineering, from leading epics to mentoring new engineers.",
-    "Outside work, I'm doing an MS in Computer Science at Georgia Tech with an AI specialization, and building small games that give me room to experiment with LLM features end to end.",
+    "What excites me most right now is AI. I'm doing an MS in Computer Science at Georgia Tech with an AI specialization, and I build small products like Courtside GM to learn how LLM features hold up in practice, from the prompt to the fallback to the production bugs.",
   ],
   toolbox: [
     { group: "Languages", items: ["Java", "TypeScript", "Python", "SQL", "Go"] },

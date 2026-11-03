@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Let&apos;s talk.</h2>
           <p className="mt-3 max-w-xl text-zinc-600 dark:text-zinc-400">
-            Whether it&apos;s about backend systems, AI in real products, or something you&apos;re building, email is the fastest way to reach me.
+            Whether it&apos;s about engineering, AI in real products, or something you&apos;re building, email is the fastest way to reach me.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

@@ -80,7 +80,7 @@ export default function Home() {
           </ol>
         </Section>
 
-        <Section id="projects" index={indexOf("projects")} label="Projects" title="Things I build on my own time." accent="yellow">
+        <Section id="projects" index={indexOf("projects")} label="Projects" title="Things I build on my own time." accent="amber">
           <div className="grid gap-6 md:grid-cols-2">
             {projects.map((project, i) => {
               const a = accents[project.accent];
@@ -204,7 +204,7 @@ function Hero() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-24 left-[8%] h-72 w-72 rounded-full bg-violet-500/20 blur-3xl dark:bg-violet-500/15" />
         <div className="absolute top-10 right-[6%] h-64 w-64 rounded-full bg-teal-400/20 blur-3xl dark:bg-teal-500/10" />
-        <div className="absolute top-56 left-[40%] h-56 w-56 rounded-full bg-yellow-300/25 blur-3xl dark:bg-yellow-400/10" />
+        <div className="absolute top-56 left-[40%] h-56 w-56 rounded-full bg-amber-400/20 blur-3xl dark:bg-amber-500/10" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(113,113,122,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(113,113,122,0.08)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
       </div>
 
@@ -214,7 +214,7 @@ function Hero() {
       </p>
       <h1 className="mt-6 text-5xl font-semibold tracking-tight text-zinc-900 sm:text-7xl dark:text-zinc-50">
         Anish{" "}
-        <span className="bg-gradient-to-r from-violet-600 via-teal-500 to-yellow-500 bg-clip-text text-transparent dark:from-violet-400 dark:via-teal-300 dark:to-yellow-300">
+        <span className="bg-gradient-to-r from-violet-600 via-teal-500 to-amber-500 bg-clip-text text-transparent dark:from-violet-400 dark:via-teal-300 dark:to-amber-300">
           Kottu
         </span>
       </h1>

@@ -18,7 +18,7 @@ export const site = {
 export const sections: { id: string; label: string; accent: Accent }[] = [
   { id: "about", label: "About", accent: "violet" },
   { id: "experience", label: "Experience", accent: "teal" },
-  { id: "projects", label: "Projects", accent: "yellow" },
+  { id: "projects", label: "Projects", accent: "amber" },
   { id: "writing", label: "Writing", accent: "rose" },
   { id: "education", label: "Education", accent: "sky" },
 ];
@@ -27,17 +27,17 @@ export const sections: { id: string; label: string; accent: Accent }[] = [
 export const stats: { value: string; label: string; where: string; accent: Accent }[] = [
   { value: "5+ yrs", label: "building production software", where: "4 companies", accent: "violet" },
   { value: "100K+", label: "quizzes protected by version pinning", where: "IXL", accent: "teal" },
-  { value: "15 min → 30 s", label: "per-skill setup with the skill importer", where: "IXL", accent: "yellow" },
+  { value: "15 min → 30 s", label: "per-skill setup with the skill importer", where: "IXL", accent: "amber" },
   { value: "140 files", label: "migrated from Hibernate 5 to 6", where: "IXL", accent: "rose" },
   { value: "~10%", label: "faster queries after the migration", where: "IXL", accent: "sky" },
   { value: "120M+", label: "records in the dental provider platform", where: "MetLife", accent: "violet" },
   { value: "60 → 12 min", label: "deployment cycles", where: "MetLife", accent: "teal" },
-  { value: "15–18%", label: "higher throughput on Java 17", where: "MetLife", accent: "yellow" },
+  { value: "15–18%", label: "higher throughput on Java 17", where: "MetLife", accent: "amber" },
   { value: "60%", label: "lower garbage collection latency", where: "MetLife", accent: "rose" },
   { value: "100%", label: "of flagged security vulnerabilities fixed", where: "MetLife", accent: "sky" },
   { value: "10,000+", label: "customers reached by onboarding features", where: "Pendo", accent: "violet" },
   { value: "30%", label: "less manual processing via Spring Batch", where: "Pendo", accent: "teal" },
-  { value: "+20%", label: "engagement from the workflows feature", where: "Pendo", accent: "yellow" },
+  { value: "+20%", label: "engagement from the workflows feature", where: "Pendo", accent: "amber" },
   { value: "2 states", label: "curriculum approvals supported (TX, CA)", where: "IXL", accent: "rose" },
 ];
 

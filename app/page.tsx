@@ -6,7 +6,7 @@ import StatsMarquee from "@/components/StatsMarquee";
 import PostCard from "@/components/PostCard";
 import { ArrowUpRightIcon, GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 import { accents } from "@/lib/accents";
-import { about, certifications, education, experience, projects, sections, site } from "@/lib/site";
+import { about, certifications, education, experience, outside, projects, sections, site } from "@/lib/site";
 import { getPosts } from "@/lib/posts";
 
 export default function Home() {
@@ -168,6 +168,31 @@ export default function Home() {
               {certifications.map((c) => (
                 <li key={c} className={`rounded-full border px-3 py-1 text-sm ${accents.sky.chip}`}>
                   {c}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Section>
+
+        <Section id="outside" index={indexOf("outside")} label="Outside work" title="Teaching, a podcast, and a lot of games." accent="lime">
+          <div className="grid gap-6 md:grid-cols-2">
+            {outside.items.map((item) => (
+              <div
+                key={item.name}
+                className="rounded-2xl border border-zinc-200 bg-white/70 p-6 transition hover:border-lime-500/50 dark:border-zinc-800 dark:bg-zinc-900/50"
+              >
+                <h3 className="text-lg font-semibold tracking-tight">{item.name}</h3>
+                <p className="mt-0.5 text-sm font-medium text-lime-700 dark:text-lime-400">{item.role}</p>
+                <p className="mt-3 text-[15px] leading-7 text-zinc-600 dark:text-zinc-400">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 rounded-2xl border border-lime-500/25 bg-lime-500/[0.05] p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Interests</p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {outside.interests.map((i) => (
+                <li key={i} className={`rounded-full border px-3 py-1 text-sm ${accents.lime.chip}`}>
+                  {i}
                 </li>
               ))}
             </ul>

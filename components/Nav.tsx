@@ -7,6 +7,7 @@ import { accents, type Accent } from "@/lib/accents";
 interface NavItem {
   id: string;
   label: string;
+  shortLabel?: string;
   accent: Accent;
 }
 
@@ -34,13 +35,13 @@ export default function Nav({ items, onHome = true }: { items: NavItem[]; onHome
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200/70 bg-stone-50/75 backdrop-blur-xl dark:border-zinc-800/70 dark:bg-zinc-950/70">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-4 px-5 sm:px-8">
-        <Link href="/" className="flex items-center gap-2 text-sm font-semibold tracking-tight">
+        <Link href="/" className="flex shrink-0 items-center gap-2 text-sm font-semibold tracking-tight">
           <span className="grid h-7 w-7 place-items-center rounded-lg bg-zinc-900 text-[11px] font-bold text-white dark:bg-zinc-100 dark:text-zinc-900">
             AK
           </span>
           <span className="hidden sm:inline">Anish Kottu</span>
         </Link>
-        <ul className="flex items-center gap-0 text-xs sm:gap-1 sm:text-sm">
+        <ul className="flex min-w-0 items-center gap-0 overflow-x-auto whitespace-nowrap text-xs [scrollbar-width:none] sm:gap-1 sm:text-sm [&::-webkit-scrollbar]:hidden">
           {items.map((item) => {
             const a = accents[item.accent];
             const isActive = active === item.id;
@@ -48,14 +49,21 @@ export default function Nav({ items, onHome = true }: { items: NavItem[]; onHome
               <li key={item.id}>
                 <Link
                   href={onHome ? `#${item.id}` : `/#${item.id}`}
-                  className={`flex items-center gap-1.5 rounded-full px-2 py-1.5 transition-colors sm:px-2.5 ${
+                  className={`flex items-center gap-1.5 rounded-full px-1.5 py-1.5 transition-colors sm:px-2.5 ${
                     isActive
                       ? `${a.soft} ${a.text}`
                       : `${a.text} sm:text-zinc-600 sm:hover:text-zinc-900 sm:dark:text-zinc-400 sm:dark:hover:text-zinc-100`
                   }`}
                 >
                   <span className={`hidden h-1.5 w-1.5 rounded-full sm:inline-block ${a.dot}`} aria-hidden="true" />
-                  {item.label}
+                  {item.shortLabel ? (
+                    <>
+                      <span className="sm:hidden">{item.shortLabel}</span>
+                      <span className="hidden sm:inline">{item.label}</span>
+                    </>
+                  ) : (
+                    item.label
+                  )}
                 </Link>
               </li>
             );

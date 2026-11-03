@@ -2,6 +2,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Section from "@/components/Section";
 import Footer from "@/components/Footer";
+import StatsMarquee from "@/components/StatsMarquee";
 import PostCard from "@/components/PostCard";
 import { ArrowUpRightIcon, GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 import { accents } from "@/lib/accents";
@@ -79,7 +80,7 @@ export default function Home() {
           </ol>
         </Section>
 
-        <Section id="projects" index={indexOf("projects")} label="Projects" title="Things I build on my own time." accent="amber">
+        <Section id="projects" index={indexOf("projects")} label="Projects" title="Things I build on my own time." accent="yellow">
           <div className="grid gap-6 md:grid-cols-2">
             {projects.map((project, i) => {
               const a = accents[project.accent];
@@ -203,7 +204,7 @@ function Hero() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-24 left-[8%] h-72 w-72 rounded-full bg-violet-500/20 blur-3xl dark:bg-violet-500/15" />
         <div className="absolute top-10 right-[6%] h-64 w-64 rounded-full bg-teal-400/20 blur-3xl dark:bg-teal-500/10" />
-        <div className="absolute top-56 left-[40%] h-56 w-56 rounded-full bg-amber-400/20 blur-3xl dark:bg-amber-500/10" />
+        <div className="absolute top-56 left-[40%] h-56 w-56 rounded-full bg-yellow-300/25 blur-3xl dark:bg-yellow-400/10" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(113,113,122,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(113,113,122,0.08)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
       </div>
 
@@ -213,7 +214,7 @@ function Hero() {
       </p>
       <h1 className="mt-6 text-5xl font-semibold tracking-tight text-zinc-900 sm:text-7xl dark:text-zinc-50">
         Anish{" "}
-        <span className="bg-gradient-to-r from-violet-600 via-teal-500 to-amber-500 bg-clip-text text-transparent dark:from-violet-400 dark:via-teal-300 dark:to-amber-300">
+        <span className="bg-gradient-to-r from-violet-600 via-teal-500 to-yellow-500 bg-clip-text text-transparent dark:from-violet-400 dark:via-teal-300 dark:to-yellow-300">
           Kottu
         </span>
       </h1>
@@ -244,19 +245,7 @@ function Hero() {
         </a>
       </div>
 
-      <dl className="mt-14 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-200 sm:grid-cols-4 dark:border-zinc-800 dark:bg-zinc-800">
-        {[
-          { k: "5 yrs", v: "building software", c: "text-violet-600 dark:text-violet-400" },
-          { k: "100K+", v: "quizzes kept stable", c: "text-teal-600 dark:text-teal-400" },
-          { k: "60 → 12", v: "minute deploys", c: "text-amber-600 dark:text-amber-400" },
-          { k: "MS CS", v: "in progress, Georgia Tech", c: "text-sky-600 dark:text-sky-400" },
-        ].map((stat) => (
-          <div key={stat.k} className="bg-white/80 p-4 backdrop-blur dark:bg-zinc-900/80">
-            <dt className={`text-xl font-semibold tracking-tight sm:text-2xl ${stat.c}`}>{stat.k}</dt>
-            <dd className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">{stat.v}</dd>
-          </div>
-        ))}
-      </dl>
+      <StatsMarquee />
     </section>
   );
 }

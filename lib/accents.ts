@@ -2,7 +2,7 @@
 // its card borders, and its dot in the nav. Class names are written out in
 // full so Tailwind can see them.
 
-export type Accent = "violet" | "teal" | "amber" | "rose" | "sky" | "indigo" | "pine";
+export type Accent = "violet" | "teal" | "yellow" | "amber" | "rose" | "sky" | "indigo" | "pine";
 
 export const accents: Record<
   Accent,
@@ -36,6 +36,18 @@ export const accents: Record<
     glow: "from-teal-500/25",
     ring: "ring-teal-500/30",
     chip: "border-teal-500/25 bg-teal-500/[0.07] text-teal-700 dark:text-teal-300",
+  },
+  // True yellow for dots and bars; a deeper shade for text so it stays
+  // readable on a light background.
+  yellow: {
+    text: "text-yellow-700 dark:text-yellow-300",
+    dot: "bg-yellow-400",
+    border: "border-yellow-400/40",
+    hoverBorder: "hover:border-yellow-400/70",
+    soft: "bg-yellow-400/[0.10] dark:bg-yellow-300/[0.08]",
+    glow: "from-yellow-400/30",
+    ring: "ring-yellow-400/30",
+    chip: "border-yellow-500/30 bg-yellow-400/[0.10] text-yellow-800 dark:text-yellow-200",
   },
   amber: {
     text: "text-amber-600 dark:text-amber-400",

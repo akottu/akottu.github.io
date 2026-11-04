@@ -5,7 +5,7 @@ tags: [AI, Side projects, Next.js]
 draft: true
 ---
 
-[Courtside GM](https://courtside-gm-game.vercel.app) is a draft game I built: you bid blind against a CPU general manager for all-time NBA players, build a five-man lineup, and then a seven-game series plays out. At the end, the game writes a short recap of the series.
+[Courtside GM](https://courtsidegm.com) is a draft game I built: you bid blind against a CPU general manager for all-time NBA players, build a five-man lineup, and then a seven-game series plays out. At the end, the game writes a short recap of the series.
 
 The first version of that recap was a template. It picked out the winner's two best players, checked for a sweep or a comeback, called out anyone playing badly out of position, and filled those facts into fixed sentences. It was accurate, but after a few games every recap sounded the same.
 

@@ -132,7 +132,7 @@ export const projects: {
       "Simultaneous blind bidding, positional penalties, tiebreak coin flips, and a CPU opponent with its own budget strategy.",
     ],
     stack: ["Next.js", "TypeScript", "Tailwind", "Claude API", "Vercel"],
-    href: "https://courtside-gm-game.vercel.app",
+    href: "https://courtsidegm.com",
     hrefLabel: "Play it",
   },
   {
